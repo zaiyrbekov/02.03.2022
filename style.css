@@ -1,0 +1,38 @@
+
+
+
+
+
+.accordion{
+  border: 1px solid lightgrey;
+  border-radius: .5rem;
+  overflow: hidden;
+  
+}
+
+.accordion__header{
+padding: .5rem 1rem;
+background-color: rgb(254, 248, 240);
+font-weight: bold;
+cursor: pointer;
+}
+.accordion__content{
+  padding: .5rem 1rem;
+border-top:1px solid lightgrey ;
+display: none;
+}
+
+.accordion--open .accordion__content{
+  display: block;
+}
+
+.accordions .accordion:not(:first-of-type){
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: 0;
+}
+.accordions .accordion:not(:last-of-type){
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+}
